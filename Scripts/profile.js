@@ -53,17 +53,17 @@ function calculateYears(date) {
 }
 
 function getElementsById(ids) {
-    containers = ["home-container", "about-container", "education-container", "experience-container", "projects-container","blogs-container"];
-    education = ["2009", "2011", "2015", "2024"];
     console.log(ids)
     for (var i = 0; i < ids.length; i++) {
         item = document.getElementById(ids[i]);
         item.style.display = "none"
-
     }
+ 
 }
 
 function showContainer(data) {
+    containers = ["home-container", "about-container", "education-container", "experience-container", "projects-container","blogs-container"];
+    education = ["2009", "2011", "2015", "2024"];
     document.getElementById(data).style.display = "";
     var array = containers;
     var index = array.indexOf(data);
@@ -82,13 +82,3 @@ function showEducation(data) {
     }
     getElementsById(array)
 }
-
-// function showAbout(){
-//     document.getElementById("about-container").style.display = "";
-//     getElementsById("home-container education-container") 
-// }
-// function showEducation(){
-//     document.getElementById("about-container").style.display = "";
-//     getElementsById("home-container education-container") 
-// }
-
