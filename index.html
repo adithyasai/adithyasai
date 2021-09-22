@@ -12,13 +12,15 @@
 
 <body onload="onLoad()">
     <div class="nav-container">
+
         <nav>
-            <a href="#home" onClick="showHome()">Home</a>
-            <a href="#aboutme" onClick="showAbout()">About</a>
-            <a href="#education" onClick="showEducation()">Education</a>
-            <a href="#experience" onClick="showExperience()">Experience</a>
-            <a href="#education" onClick="showEducation()">Projects</a>
-            <a href="#blogs" onClick="showBlogs()">Blogs</a>
+            <a href="#home" onClick="showContainer('home-container')">Home</a>
+            <a href="#aboutme" onClick="showContainer('about-container')">About</a>
+            <a href="#education" onClick="showContainer('education-container')">Education</a>
+            <a href="#experience" onClick="showContainer('experience-container')">Experience</a>
+            <a href="#projects" onClick="showContainer('projects-container')">Projects</a>
+            <a href="#blogs" onClick="showContainer('blogs-container')">Blogs</a>
+            <span id='ct' class="time"></span>
 
         </nav>
     </div>
@@ -53,10 +55,10 @@
     <div class="about-container content" id="about-container">
         <div class="about-terminal">
             <div class="terminal-header">
-                <div class="terminal-header-button" ></div>
-                <div class="terminal-header-button" ></div>
-                <div class="terminal-header-button" ></div>
-                <div class="terminal-header-button" ></div>
+                <div class="terminal-header-button"></div>
+                <div class="terminal-header-button"></div>
+                <div class="terminal-header-button"></div>
+                <div class="terminal-header-button"></div>
             </div>
             <div class="terminal-window">
                 <div class="stat">
@@ -81,15 +83,15 @@
                 <div class="stat">
                     <p class="input-stat">Adithya.education()</p>
                     <p class="output-stat">
-                        "BTECH Computer Science at 
-                        <span><a href="https://www.jntuk.edu.in/" target="_blank"
-                                >"JNTU K"</a></span>"
+                        "BTECH Computer Science at
+                        <span><a href="https://www.jntuk.edu.in/" target="_blank">"JNTU K"</a></span>"
                     </p>
                 </div>
                 <div class="stat">
                     <p class="input-stat">Adithya.skills()</p>
                     <p class="output-stat">
-                        ['C#', 'ASP.NET', 'MVC','Angular','HTML','CSS','SASS', "Bootstrap","JavaScript","TypeScript","Voice UI","SQL","Azure","AMP","Alexa","Node JS"]
+                        ['C#', 'ASP.NET', 'MVC','Angular','HTML','CSS','SASS',
+                        "Bootstrap","JavaScript","TypeScript","Voice UI","SQL","Azure","AMP","Alexa","Node JS"]
                     </p>
                 </div>
                 <div class="stat">
@@ -109,28 +111,82 @@
         </div>
     </div>
     <div class="education-container content" id="education-container">
-        <p class="info"> Self motivated person with <span id="experience"></span> years of industry
-            experience who believes that "A good software
-            product can change the world we live in". Always
-            willing to step out of his comfort zone and thinks
-            out of box to make it happen</p>
-       
+        <div class="wizard">
+            <div class="years" onClick="showEducation('2009')">
+                <span class="year">2009</span>
+            </div>
+            <div class="arrow">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+
+            <div class="years" onClick="showEducation('2011')">
+                <span class="year">2011</span>
+            </div>
+            <div class="arrow">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="years" onClick="showEducation('2015')">
+                <span class="year">2015</span>
+            </div>
+            <div class="arrow" >
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="years" onClick="showEducation('2024')">
+                <span class="year">2024</span>
+            </div>
+        </div>
+        <div class="education-content">
+            <div id="2009" class="year-data">
+                <div>
+                    <img class="education-img" src="Images/2009.jpg" alt="Aditya  image">
+                </div>
+                <div class="education-info">
+                    <h3>SSC</h3>
+                    <p class="education-info"> Completed My Schooling in Aditya Educational Schools in year Apr 2009</p>
+                </div>
+            </div>
+            <div id="2011" class="year-data">
+                <div>
+                    <img class="education-img" src="Images/2009.jpg" alt="Aditya  image">
+                </div>
+                <div class="education-info">
+                    <h3>INTER</h3>
+                    <p class="education-info"> Completed My Inter in Aditya Intermediate in year Apr 2011</p>
+                </div>
+            </div>
+            <div id="2015" class="year-data">
+                <div>
+                    <img class="education-img" src="Images/2009.jpg" alt="Aditya  image">
+                </div>
+                <div class="education-info">
+                    <h3>BTECH - 2011 - 2015</h3>
+                    <p class="education-info"> Completed My Btech in Computer Science in Aditya Engineering College affliated to JNTUK 2015</p>
+                </div>
+            </div>
+            <div id="2024" class="year-data">
+                <div>
+                    <img class="education-img" src="Images/2009.jpg" alt="Aditya  image">
+                </div>
+                <div class="education-info">
+                    <h3>MS</h3>
+                    <p class="education-info">Pursuing my MS in PGSSP in III Hyderabad</p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
     <div class="experience-container content" id="experience-container">
-        <p class="info"> Self motivated person with <span id="experience"></span> years of industry
-            experience who believes that "A good software
-            product can change the world we live in". Always
-            willing to step out of his comfort zone and thinks
-            out of box to make it happen</p>
-       
+        <p class="info"> Experience</p>
+
     </div>
     <div class="projects-container content" id="projects-container">
-        <p class="info"> Self motivated person with <span id="experience"></span> years of industry
-            experience who believes that "A good software
-            product can change the world we live in". Always
-            willing to step out of his comfort zone and thinks
-            out of box to make it happen</p>
-       
+        <p class="info">Projects</p>
+
+    </div>
+    <div class="blogs-container content" id="blogs-container">
+        <p class="info">Blogs</p>
+
     </div>
 </body>
 <script src="Scripts/profile.js"></script>
