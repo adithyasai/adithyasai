@@ -45,7 +45,6 @@ nav{
     margin-right: auto; 
     width: 1080px;
     margin-top: 30px;
-
 }
 .image-container{
     /* display: inline-block; */
@@ -60,8 +59,8 @@ nav{
     height: 250px;
     background-color: #4E6B89;
     border-radius: 50%;
-    display: block;
     padding: 1px;
+    margin-top: 20px;
 
 }
 .basic-information{
@@ -92,6 +91,7 @@ nav{
 .social-media-icons {
     text-align: center;
     margin-top: 20px;
+    padding-bottom: 30px;
     /* float: right; */
 }
 .icon {
@@ -223,6 +223,10 @@ top:40px;
         width: 350px;
         margin-top: 30px;
     
+    }
+    .image-container{
+        margin-top: 30px;
+
     }
     .about-container{
         padding: 10px;
