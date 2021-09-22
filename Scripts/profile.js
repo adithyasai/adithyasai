@@ -1,14 +1,16 @@
 var expereince;
 var age;
-var containers = ["about-container", "education-container", "experience-container", "projects-container","blogs-container"];
-var education = ["2011", "2015", "2024"];
+const containers = ["home-container","about-container", "education-container", "experience-container", "projects-container","blogs-container"];
+const education = ["2009","2011", "2015", "2024"];
 
 function onLoad() {
     calculateExpereince();
     calculateAge();
-    getElementsById(containers);
     display_ct();
+    getElementsById(containers);
     getElementsById(education);
+    document.getElementById("home-container").style.display = ""
+    document.getElementById("2009").style.display = ""
 }
 
 function display_c() {
@@ -56,16 +58,16 @@ function getElementsById(ids) {
     console.log(ids)
     for (var i = 0; i < ids.length; i++) {
         item = document.getElementById(ids[i]);
-        item.style.display = "none"
+        item.style.display = "none";
     }
  
 }
 
 function showContainer(data) {
-    containers = ["home-container", "about-container", "education-container", "experience-container", "projects-container","blogs-container"];
-    education = ["2009", "2011", "2015", "2024"];
+    
     document.getElementById(data).style.display = "";
-    var array = containers;
+    var array = [];
+    Array.prototype.push.apply(array, containers);
     var index = array.indexOf(data);
     if (index !== -1) {
         array.splice(index, 1);
@@ -75,7 +77,8 @@ function showContainer(data) {
 
 function showEducation(data) {
     document.getElementById(data).style.display = "";
-    var array = education;
+    var array = [];
+    Array.prototype.push.apply(array, education);
     var index = array.indexOf(data);
     if (index !== -1) {
         array.splice(index, 1);

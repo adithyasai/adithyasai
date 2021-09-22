@@ -36,8 +36,6 @@ nav{
 
 .content{
     display: block;
-    padding: 20px 90px;
-
 }
 
 /* home Container */
@@ -113,7 +111,10 @@ nav{
 }
 
 /* About Container */
+.about-container{
+    padding: 20px 90px;
 
+}
 .terminal-header {
     display: flex;
     align-items: center;
@@ -168,6 +169,8 @@ nav{
 /* Education */
 .education-container{
     text-align: center;
+    padding: 20px 90px;
+
 }
 .years{
     display: inline-block;
@@ -212,4 +215,31 @@ top:40px;
 }
 .education-info{
     margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .home-container{     
+        width: 350px;
+        margin-top: 30px;
+    
+    }
+    .about-container{
+        padding: 10px;
+    }
+    .nav-container{
+        height:150px
+    }
+   
+    .education-container{
+        width: 350px;
+        padding: 10px;
+    }
+    .education-content{
+        width: 350px;
+
+    }
+    .years{
+        margin: 10px;
+    }
 }
