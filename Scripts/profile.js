@@ -1,7 +1,7 @@
 var expereince;
 var age;
 var containers = ["about-container", "education-container", "experience-container", "projects-container","blogs-container"];
-var education = ["2009", "2011", "2015", "2024"];
+var education = ["2011", "2015", "2024"];
 
 function onLoad() {
     calculateExpereince();
