@@ -217,6 +217,97 @@ top:40px;
     margin-top: 20px;
 }
 
+/* Experience Container */
+.experience-container{
+    text-align: center;
+    padding: 20px 90px;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+    
+  }
+  th{
+      text-transform: uppercase;
+  }
+  table{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+
+  /* Project COntainer */
+
+  .projects-container{
+    padding: 20px 90px;
+  }
+
+.project-card {
+    box-shadow: 0 50px 100px rgba(50, 50, 93, .05), 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #BFD5EA;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin: 30px 10px;
+    color: #100b08;
+}
+
+.card-text h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.card-about p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    font-family: lato, serif;
+}
+
+.card-about a {
+    text-decoration: none;
+}
+
+.card-tags {
+    text-align: center;
+}
+
+.card-tags span {
+    color: #100b08;
+    background-color: #BFD5EA;
+    border-style: outset;
+    border-color: #BFD5EA;
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 11px;
+}
+
+.source{
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(50, 50, 93, .1), 0 1px 4px rgba(0, 0, 0, .2);
+    background-color: #BFD5EA;
+    border-radius: 4px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 14px;
+    margin: 15px;
+   color: black;
+}
+
 
 @media screen and (max-width: 800px) {
     .home-container{     
@@ -246,4 +337,21 @@ top:40px;
     .years{
         margin: 10px;
     }
+
+   .experience-container{
+       padding: 5px;
+   }
+
+   table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 0px;
+    
+  }
+
+  .projects-container{
+      padding: 10px;
+  }
+      
+     
 }
